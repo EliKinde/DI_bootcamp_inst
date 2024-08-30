@@ -1,0 +1,5 @@
+print("Test Data")
+num_one = input("Input the 1st number: ")
+num_two = input("Input the 2st number: ")
+num_three = input("Input the 3st number: ")
+print("The greatest number is: ",max(num_one, num_two, num_three))
