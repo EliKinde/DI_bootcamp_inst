@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+button {
+	grid-column: 1/4; 
+	border: 1px solid black;
+	border-radius: 8px;
+	color:black;
+  background-color: white;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 3em;
+	margin: 4px 2px;
+	cursor: pointer;
+
+}
+
+.cube {
+  width: 6em;
+  height: 6em;
+  border: 1px solid black;
+  background-color: black; 
+}
+
+.sidebar {
+  display: grid;
+	gap: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(8, 1fr);
+	height: 100vh;
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr);
+  height: 100vh;
+  width: 70%;
+  float: right;
+}
+
+
+#main > div {
+  background-color: white;
+  border: 1px solid lightgrey;
+}
